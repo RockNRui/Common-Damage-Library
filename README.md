@@ -3,8 +3,11 @@ A minecraft datapack to deal custom amounts of damage and healing to mobs and pl
 
 Credits:
 PearUhDox: True mob damage, normal player damage, and mob healing.
+
 RockNRed: Normal mob damage, player healing, compilation, re-formatting/re-organization, and optimization.
+
 gibbs: True player damage original tech.
+
 GalacticAC: Normal player damage original tech concept.
 
 # Purpose
