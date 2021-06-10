@@ -12,6 +12,10 @@ Drag & drop the datapack into your world's datapacks folder and reload/enable it
 
 Important note: This datapack forceloads a chunk at (/tp @s 4206861 1 4206888 90 0) to store the iron golems used for custom damage. Be careful not to unload this.
 
+# Pre-made Examples
+
+Also included is a seperate datapack called `cdl Examples`. In it you can find pre-made examples of how to call all the types of damage and healing, as well as already set up custom death messages.
+
 
 # Functionality
 
@@ -24,6 +28,11 @@ This is any combination of `/function cd:lib/[mob or player]/[damage or healing]
 Some examples: `/function cd:lib/mob/damage/true`, `/function cd:lib/player/damage/normal`, `/function cd:lib/mob/heal`
 
 This function must be ran `AS` and `AT` the mob.
+
+
+# Note
+
+I reccomend using the pre-made examples if learning by example is easier for you. Below is the more "manual" explanations and setup.
 
 # Custom Death Messages
 
@@ -52,15 +61,8 @@ For example:
 scoreboard players set @s cdl.Damage_Queue 10
 scoreboard players set @s cdl.Death_ID 1
 function cd:lib/player/damage/normal
-
 ```
 Be careful not to overlap your ID with other datapacks that use this library!
 
 You can find a pre-made example of all of this already working in the below mentioned example.
-
-
-# Pre-made Examples
-
-Also included is a seperate datapack called `cdl Examples`. In it you can find pre-made examples of how to call all the types of damage and healing, as well as already set up custom death messages.
-
 
