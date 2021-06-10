@@ -52,7 +52,6 @@ For example:
 scoreboard players set @s cdl.Damage_Queue 10
 scoreboard players set @s cdl.Death_ID 1
 function cd:lib/player/damage/normal
-
 ```
 Be careful not to overlap your ID with other datapacks that use this library!
 
