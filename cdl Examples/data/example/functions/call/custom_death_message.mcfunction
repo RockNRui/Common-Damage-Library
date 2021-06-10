@@ -1,0 +1,2 @@
+execute if score @s cdl.Death_ID matches 1 run tellraw @a [{"selector":"@p"},{"text":" died to some \"NORMAL\" custom damage","color":"white"}]
+execute if score @s cdl.Death_ID matches 2 run tellraw @a [{"selector":"@p"},{"text":" died to some \"TRUE\" custom damage","color":"white"}]
