@@ -64,5 +64,5 @@ function cd:lib/player/damage/normal
 ```
 Be careful not to overlap your ID with other datapacks that use this library!
 
-You can find a pre-made example of all of this already working in the below mentioned example.
+You can find a pre-made example of all of this already working in the aforementioned example.
 
