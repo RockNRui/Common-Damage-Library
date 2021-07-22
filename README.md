@@ -28,7 +28,7 @@ Also included is a seperate datapack called `cdl Examples`. In it you can find p
 
 # Functionality
 
-This datapack works by 2 scoreboards `cdl.Damage_Queue` and `cdl.Healing_Queue`. You set these values to the desired damage or healing amount for the desired entity.
+This datapack works by 2 scoreboards `cdl.damage_queue` and `cdl.healing_queue`. You set these values to the desired damage or healing amount for the desired entity.
 
 Afterwards (Ideally in the same tick/function.), you run the respective function for the type of mob and damage you wish to do.
 
@@ -67,8 +67,8 @@ You'll need 1 line for every custom death message.
 You also need to set the ID of your custom death message when you call the damage to the player. This needs to be done BEFORE the function call itself.
 For example:
 ```
-scoreboard players set @s cdl.Damage_Queue 10
-scoreboard players set @s cdl.Death_ID 1
+scoreboard players set @s cdl.damage_queue 10
+scoreboard players set @s cdl.death_id 1
 function cd:lib/player/damage/normal
 ```
 Be careful not to overlap your ID with other datapacks that use this library!
