@@ -1,3 +1,10 @@
+# Datapack  : CDL
+# Author(s) : RockNRed, PearUhDox
+# Created   : Unknown
+# Last Edit : 7/22/21
+# Name      : Invulnerable Tick
+# Use       : Ran to make a mob flash red.
+
 data modify storage cdl:dmg_save_resist OldResist set value {}
 data modify storage cdl:dmg_save_wither OldWither set value {}
 

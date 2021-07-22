@@ -1,3 +1,10 @@
+# Datapack  : CDL
+# Author(s) : RockNRed, gibbs
+# Created   : Unknown
+# Last Edit : 7/22/21
+# Name      : Restore Cloud
+# Use       : Ran to restore absorption to the player via an area of effect cloud.
+
 #summoning cloud
 summon minecraft:area_effect_cloud ~ ~ ~ {Particle:"minecraft:block minecraft:air",ReapplicationDelay:0,Age:-1,Radius:0.5f,RadiusPerTick:0f,RadiusOnUse:-0.5f,Duration:2,WaitTime:0,Effects:[{Id:1b,Amplifier:1b,Duration:1,ShowParticles:1b,ShowIcon:1b,Ambient:0b}],Tags:["utilEffectCloud"]}
 

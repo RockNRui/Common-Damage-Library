@@ -1,13 +1,20 @@
+# Datapack  : CDL
+# Author(s) : RockNRed, gibbs
+# Created   : Unknown
+# Last Edit : 7/22/21
+# Name      : Absorption
+# Use       : Ran to apply a new absorption amount to the player.
+
 #Get absorption amount
-execute store result score $player.Absorption cdl.Temp run data get entity @s AbsorptionAmount
+execute store result score $player.absorption cdl.temp run data get entity @s AbsorptionAmount
 
 #Saving absorption and clearing it
 data modify storage cdl:true_damage_absorption effect set from entity @s ActiveEffects[{Id:22b}]
 effect clear @s minecraft:absorption
 
 #Total calculation
-scoreboard players operation $player.Absorption cdl.Temp -= @s cdl.Damage_Queue
+scoreboard players operation $player.absorption cdl.temp -= @s cdl.damage_queue
 
-#amage conditions
-execute if score $player.Absorption cdl.Temp matches ..0 run scoreboard players operation @s cdl.Damage_Queue += $player.Absorption cdl.Temp
-execute if score $player.Absorption cdl.Temp matches 1.. run function cd:func/player_damage_true/absorption/restore
+#Damage conditions
+execute if score $player.absorption cdl.temp matches ..0 run scoreboard players operation @s cdl.damage_queue += $player.absorption cdl.temp
+execute if score $player.absorption cdl.temp matches 1.. run function cd:func/player_damage_true/absorption/restore

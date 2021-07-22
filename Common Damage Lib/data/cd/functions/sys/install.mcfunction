@@ -1,31 +1,38 @@
+# Datapack  : CDL
+# Author(s) : RockNRed
+# Created   : Unknown
+# Last Edit : 7/22/21
+# Name      : Install
+# Use       : Ran to install various dependancies like pincushin golems, scoreboards, and the forceload chunk.
+
 ##Add scoreboards
 #Healing queue
-scoreboard objectives add cdl.Heal_Queue dummy
+scoreboard objectives add cdl.heal_queue dummy
 #Damaging queue
-scoreboard objectives add cdl.Damage_Queue dummy
+scoreboard objectives add cdl.damage_queue dummy
 #Damage timer
-scoreboard objectives add cdl.Damage_Timer dummy
+scoreboard objectives add cdl.damage_timer dummy
 #HPMod queue (Shorthand for Healing/Damaging queues)
-scoreboard objectives add cdl.HPM_Queue dummy
+scoreboard objectives add cdl.hpm_queue dummy
 #Constant/Temporary scores scoreboard
-scoreboard objectives add cdl.Temp dummy
+scoreboard objectives add cdl.temp dummy
 #Custom death message ID
-scoreboard objectives add cdl.Death_ID dummy
+scoreboard objectives add cdl.death_id dummy
 #Death tracker
-scoreboard objectives add cdl.Death deathCount
+scoreboard objectives add cdl.death deathCount
 #True damage health score
-scoreboard objectives add cdl.P_Health health
+scoreboard objectives add cdl.p_health health
 
 ##Set constants
 #-1
-scoreboard players set $constant.-1 cdl.Temp -1
+scoreboard players set $constant.-1 cdl.temp -1
 #4
-scoreboard players set $constant.4 cdl.Temp 4
+scoreboard players set $constant.4 cdl.temp 4
 #100
-scoreboard players set $constant.100 cdl.Temp 100
+scoreboard players set $constant.100 cdl.temp 100
 
 #Force chunk build
-execute unless block 4206848 0 4206880 diamond_block run function cd:sys/build
+execute unless block 4206849 1 4206881 diamond_block run function cd:sys/build
 
 ##Set mobs
 #Player damagers

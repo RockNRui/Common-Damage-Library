@@ -1,19 +1,26 @@
-execute store result score $gamerule.Death_Messages cdl.Temp run gamerule showDeathMessages
-execute if score $gamerule.Death_Messages cdl.Temp matches 1 run gamerule showDeathMessages false
+# Datapack  : CDL
+# Author(s) : RockNRed, gibbs
+# Created   : Unknown
+# Last Edit : 7/22/21
+# Name      : Main
+# Use       : Central branching function of dealing true damage.
+
+execute store result score $gamerule.Death_Messages cdl.temp run gamerule showDeathMessages
+execute if score $gamerule.Death_Messages cdl.temp matches 1 run gamerule showDeathMessages false
 
 #Save current health
-scoreboard players set $player.Health_Before_HBC cdl.Temp 0
-scoreboard players operation $player.Health_Before_HBC cdl.Temp = @s cdl.P_Health
+scoreboard players set $player.health_before_hbc cdl.temp 0
+scoreboard players operation $player.health_before_hbc cdl.temp = @s cdl.p_health
 
 #Save health boost
 execute if predicate cd:has_health_boost at @s run function cd:func/player_damage_true/save_health_boost
 
 #Absorption damage
-execute if score @s cdl.Damage_Queue matches 1.. if predicate cd:has_absorption run function cd:func/player_damage_true/absorption
+execute if score @s cdl.damage_queue matches 1.. if predicate cd:has_absorption run function cd:func/player_damage_true/absorption
 
 #Health damage
-execute if score @s cdl.Damage_Queue matches 1.. run function cd:func/player_damage_true/death_check
+execute if score @s cdl.damage_queue matches 1.. run function cd:func/player_damage_true/death_check
 
-scoreboard players set @s cdl.Damage_Timer 10
+scoreboard players set @s cdl.damage_timer 10
 function cd:func/player_damage_true/death_timer/loop
 function cd:func/custom_death/loop
