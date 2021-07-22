@@ -60,7 +60,7 @@ Inside it, place this:
 
 Replacing foo:bar with your own datapack. You also need a function for this to call, which you can name whatever you want. Inside that place this:
 ```
-execute if score @s cdl.Death_ID matches 1 run tellraw @a [{"selector":"@p"},{"text":" died to some \"NORMAL\" custom damage","color":"white"}]
+execute if score @s cdl.death_id matches 1 run tellraw @a [{"selector":"@p"},{"text":" died to some \"NORMAL\" custom damage","color":"white"}]
 ```
 You'll need 1 line for every custom death message.
 
