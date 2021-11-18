@@ -19,6 +19,9 @@ This datapack aims to make it as easy as possible for a user to do custom amount
 
 Drag & drop the datapack into your world's datapacks folder and reload/enable it.
 
+To uninstall the datapack, run `/function cd:sys/uninstall` and delete the datapack from your world's datapacks folder.
+Then `/reload` and the uninstallation is complete. Make sure you do not run this command before the datapack is gone, else the system will simply re-install itself!
+
 Important note: This datapack forceloads a chunk at (/tp @s 4206861 1 4206888 90 0) to store the iron golems used for custom damage. Be careful not to unload this.
 
 # Pre-made Examples
@@ -36,7 +39,7 @@ This is any combination of `/function cd:lib/[mob or player]/[damage or healing]
 
 Some examples: `/function cd:lib/mob/damage/true`, `/function cd:lib/player/damage/normal`, `/function cd:lib/mob/heal`
 
-This function must be ran `AS` and `AT` the mob.
+This function must be ran `AS` and `AT` the entity you are damaging/healing.
 
 
 # Note
