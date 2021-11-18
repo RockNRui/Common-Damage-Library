@@ -5,8 +5,9 @@
 # Name      : Main
 # Use       : Central branching function of dealing true damage.
 
-execute store result score $gamerule.Death_Messages cdl.temp run gamerule showDeathMessages
-execute if score $gamerule.Death_Messages cdl.temp matches 1 run gamerule showDeathMessages false
+execute if score @s cdl.death matches 1.. run scoreboard players set @s cdl.death 0
+execute store result score $gamerule.death_messages cdl.temp run gamerule showDeathMessages
+execute if score $gamerule.death_messages cdl.temp matches 1 run gamerule showDeathMessages false
 
 #Save current health
 scoreboard players set $player.health_before_hbc cdl.temp 0
