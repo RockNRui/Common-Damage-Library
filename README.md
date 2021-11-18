@@ -17,7 +17,7 @@ This datapack aims to make it as easy as possible for a user to do custom amount
 
 # Installation & Note
 
-Drag & drop the datapack into your world's datapacks folder and reload/enable it.
+Drag & drop the datapack into your world's datapacks folder and `/reload` or `/datapack enable "file/Common Damage Lib"`.
 
 To uninstall the datapack, run `/function cd:sys/uninstall` and delete the datapack from your world's datapacks folder.
 Then `/reload` and the uninstallation is complete. Make sure you do not run this command before the datapack is gone, else the system will simply re-install itself!
