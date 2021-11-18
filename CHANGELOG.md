@@ -1,5 +1,16 @@
 # Changelog
 
+V 1.2 - 11/17/21
+
+↔ Fixed a bug where Custom Death Messages would incorrectly show up.
+
+↔ Fixed a bug where showDeathMessages would always get disabled.
+
+↔ Changed some un-caught namesapces to snake_case.
+
+↔ Small comment changes.
+
+
 V 1.1 - 7/22/21
 
 + Added more comments/credits/further detail in each function file.
