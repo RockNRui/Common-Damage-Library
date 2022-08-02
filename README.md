@@ -1,5 +1,5 @@
 # Common Damage Library
-A minecraft datapack to deal custom amounts of damage and healing to mobs and players.
+A minecraft datapack for 1.19 to deal custom amounts of damage and healing to mobs and players.
 
 Credits:
 
