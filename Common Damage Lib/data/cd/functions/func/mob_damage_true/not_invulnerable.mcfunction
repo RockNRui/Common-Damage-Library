@@ -15,7 +15,7 @@ scoreboard players operation $md.health cdl.temp += $md.abs cdl.temp
 
 #Check if the damage kills or overkills the mob, and /kill if so
 scoreboard players operation $md.health cdl.temp -= @s cdl.damage_queue
-execute if score $md.health cdl.temp matches ..0 run kill @s
+execute if score $md.health cdl.temp matches ..0 run function cd:func/mob_damage_true/totem_proc
 
 #If the were to survive the damage, deal damage acordingly.
 execute if score $md.health cdl.temp matches 1.. run function cd:func/mob_damage_true/deal_damage
