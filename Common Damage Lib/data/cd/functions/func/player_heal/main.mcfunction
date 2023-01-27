@@ -16,5 +16,3 @@ execute if score @s cdl.heal_queue matches 2.. run function cd:func/player_heal/
 execute if score @s cdl.heal_queue matches 1 run function cd:func/player_heal/heal_amount/1
 #Then, loop the function if they have health needed healing remaining
 execute if score @s cdl.heal_queue matches 1.. run function cd:func/player_heal/main
-#Reset score when it reaches 0
-execute if score @s cdl.heal_queue matches 0 run scoreboard players reset @s cdl.heal_queue

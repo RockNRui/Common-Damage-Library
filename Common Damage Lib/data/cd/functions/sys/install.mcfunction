@@ -23,6 +23,10 @@ scoreboard objectives add cdl.death deathCount
 #True damage health score
 scoreboard objectives add cdl.p_health health
 
+scoreboard objectives add cdl.hth.post_hp dummy
+scoreboard objectives add cdl.hth.pre_hp dummy 
+scoreboard objectives add cdl.hth.amount dummy
+
 ##Set constants
 #-1
 scoreboard players set $constant.-1 cdl.temp -1

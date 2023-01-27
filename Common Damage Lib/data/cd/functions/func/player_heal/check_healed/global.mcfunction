@@ -1,0 +1,1 @@
+execute as @a[scores={cdl.hth.amount=1..}] at @s run function cd:func/player_heal/check_healed/as_player
