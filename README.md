@@ -1,5 +1,27 @@
+
+
+
+
+
+# THIS DATAPACK IS RETIRED
+
+Come 1.19.4, the main use case of this datapack has been made obsolete by the `/damage` command. Because of this, I will no longer be supporting or updating this datapack.
+
+
+The remaining useful parts, mob true damage, player true damage, mob healing, and player healing have all been moved over to my utility datapack Black Box Library (BBL.)
+
+You can find that here: https://github.com/RockNRui/Black-Box-Library
+
+The below doccumentation is left as-is and any strange wording implying its usefulness will not be touched.
+
+
+
+
+
+
+
 # Common Damage Library
-A minecraft datapack for 1.19 to deal custom amounts of damage and healing to mobs and players.
+A minecraft datapack for 1.19.3 or lower to deal custom amounts of damage and healing to mobs and players.
 
 Credits:
 
